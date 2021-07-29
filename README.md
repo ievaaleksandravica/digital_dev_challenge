@@ -31,4 +31,4 @@ If you run out of time, please elaborate on the things you would do in your read
 
 If you are unsure about some details, please improvise. You have the freedom to decide.
 
-To turn in your code, please send us the link to your public github repo. If for any reason you prefer not to make it public, please contact us and we'll let you know which user to invite.
+To turn in your code, please copy or clone repo then send us the link to your public github repo. If for any reason you prefer not to make it public, please contact us and we'll let you know which user to invite.
