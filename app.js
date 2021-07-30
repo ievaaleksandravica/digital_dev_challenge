@@ -65,7 +65,7 @@ fse.writeFile("./dev/templates/transactional.html", devContent, function(err) {
 });
 
 // pushing content to prod html file
-fse.writeFile("./prod/templates/transactional.html", devContent, function(err) {
+fse.writeFile("./prod/templates/transactional.html", prodContent, function(err) {
     if(err) {
         return console.log(err);
     }
