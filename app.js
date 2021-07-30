@@ -49,6 +49,25 @@ fse.copyFile(src, dest, (error) => {
 
   console.log("Content copied Successfully!");
 });
-// fs.copyDir('/prod', '/backup')
-//   .then(() => console.log('success!'))
-//   .catch(err => console.error(err))
+
+console.log(">>> Section 3 result below")
+
+// retreiving content
+const devContent = myModule.template_data.dev_env[0].content
+const prodContent = myModule.template_data.prod_env[0].content
+
+// pushing content to dev html file
+fse.writeFile("./dev/templates/transactional.html", devContent, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The development content was inserted!");
+});
+
+// pushing content to prod html file
+fse.writeFile("./prod/templates/transactional.html", devContent, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+    console.log("The production content was inserted!");
+});
