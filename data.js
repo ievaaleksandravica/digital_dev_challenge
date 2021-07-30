@@ -1,3 +1,4 @@
+console.log('testing connection')
 module.exports = {
   send_log_data: [
     {
